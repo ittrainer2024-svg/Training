@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Формы</title>
+        <style>
+            form {
+                max-width: 350px;
+                background-color: antiquewhite;
+                padding: 20px;
+                text-align: center;
+                border: solid 2px #2682dd;
+    margin: auto;
+                box-shadow: 10px 10px 10px #9a9999;
+            }
+            input, textarea,select {
+                margin: 8px;
+                padding: 5px;
+            }
+            input::placeholder {
+                color: #2682dd;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="file.php" method="post">
+            <label for="name1">Имя:</label><br>
+            <input type="text" id="name1" name="name" placeholder="введите ваше имя" required style=": red;">
+            <br>
+            <label for="pass">Пароль:</label><br>
+            <input type="password" id="pass" name="password" placeholder="введите пароль" required pattern=".{6,}">
+            <br>
+             <label for="e-mail1">E-mail:</label><br>
+            <input type="email" id="e-mail1" name="email" placeholder="введите e-mail" required>
+            <br>
+            <label for="text-area-1">Комментарий</label>
+            <br>
+            <textarea name="textarea" id="text-area-1" rows="3" cols="40"></textarea>
+            <br>
+            <label for="list-1">Выберите животное</label><br>
+            <select name="select" id="list-1" placeholder="введите пароль">
+                <option value=""></option>
+                <option value="dog">собака</option>
+                <option value="cat">кошка</option>
+                <option value="bird">птица</option>
+                <option value="fish">рыбка</option>
+            </select>
+            <br>
+            <button type="reset" value="reset">сброс      
+            </button>
+              <button type="submit" value="submit">отправить      
+            </button>
+        </form>
+    </body>
+</html>
