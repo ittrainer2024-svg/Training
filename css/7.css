@@ -1,0 +1,32 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+            div.container {
+    background-color: blue;
+    padding: 10px;
+    max-width: 1000px;
+                margin: auto;
+                
+}
+h2 {
+    text-align: center;
+}
+.img-outline {
+    outline: 5px solid red;
+    border-radius: 20px;
+}
+.img-border {
+  border: 10px solid green;
+  border-radius: 20px; /* Закруглённые углы */
+}
+.img-opacity {
+    opacity: 0.3;
+}
+.img-shadow {
+        box-shadow: 15px 15px 10px rgba(255, 0, 0, 0.9); 
+    }    /*    создает тень с прозрачностью 0.5.*/
+.img-shadow-2 {
+        /*filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));*/
+    filter: sepia(60%);
+    }    /* создает тень через свойство filter.*/
